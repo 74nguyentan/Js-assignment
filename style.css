@@ -1,0 +1,504 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    padding: 0px;
+    margin: 0px;
+}
+#boxtrang {
+    width: 1349px;
+}
+#boxtrang> header > #bia {
+    background-image: url("images/anh bia.jpg");
+    background-size: 100% 100%;
+    height: 470px;
+}
+/* menu*/
+
+.menu {
+	position: fixed;
+	z-index: 100000;
+    padding: 0px;
+    margin: 0px;
+	width: 1349px;
+	/*thả nổi menu */
+    list-style: none;
+    background-color: black;
+	
+}
+.menu a {
+    display: block;
+    color: white;
+    font-variant: normal;
+    font-size: larger;
+    text-decoration: none;
+    padding: 2px 3px 0px 50px;
+}
+.menu .sony a {
+    display: block;
+    color: white;
+    font-variant: normal;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 14px 20px 5px 20px;
+}
+.menu .sony a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+ul.menu>li {
+    float: left;
+    position: relative;
+}
+ul.menu>li>ul {
+    position: absolute;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 0 1px gray;
+    z-index: 1;
+}
+ul.menu>li>ul a {
+    display: block;
+    line-height: 30px;
+    color: blue;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px;
+}
+ul.menu>li:hover>ul {
+    display: block;
+    background-color: gray;
+    color: white;
+}
+#menuDT {
+    width: 140px;
+}
+#menuSP {
+    width: 209px;
+}
+#menuPK {
+    width: 230px;
+}
+#menuHT {
+    width: 230px;
+}
+/* slide show 1*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif;
+}
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    webkit-animation-name: fade;
+    webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+ @-webkit-keyframes fade {
+ from {
+opacity: .4
+}
+ to {
+opacity: 1
+}
+}
+ @keyframes fade {
+ from {
+opacity: .4
+}
+ to {
+opacity: 1
+}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.text {
+    font-size: 11px
+}
+}
+#slide1 {
+    z-index: 1;
+}
+/*slide show 2 */
+
+#carousel {
+    position: relative;
+    height: 220px;
+    top: 70%;
+    transform: translateY(-50%);
+    overflow: hidden;/*margin-bottom: -320px;*/
+}
+#carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+}
+#carousel div img {
+    width: 400px;
+    transition: width 1s;
+}
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+    width: 200px;
+}
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+    width: 200px;
+}
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+    width: 270px;
+}
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+    width: 200px;
+}
+#carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+    width: 270px;
+}
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+    width: 200px;
+}
+.buttons {
+    position: absolute;
+    top: 1480px;
+/*    left: 680px;*/
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+/* Next & previous buttons */
+#prev{
+	position: absolute;
+	left: 390px;
+	
+}
+
+#next{
+	position: absolute;
+	left: 770px;
+}
+
+#prev, #next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover, #next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+#slide2 {
+    z-index: -1;
+    margin-top: 100px;/*margin-bottom: -320px;*/
+	
+}
+#body_ar_as {
+    width: 1199px;
+    margin: 0px 75px;
+}
+#tieude {
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    color: white;
+    z-index: 0;
+}
+#dki {
+    position: absolute;
+    top: 290px;
+    left: 100px;
+    background-color: royalblue;
+    padding: 10px;
+}
+#dki > a:hover {
+    padding: 10px;
+}
+.xpe2 {
+    z-index: 1;
+    height: 320px;
+    background-color: silver;
+}
+.xpe2 img:hover {
+    transform: scale(1.2);
+}
+.xpe2text {
+    float: right;
+    margin: 20px 150px 0px 0px;
+}
+.xpe1 {
+    z-index: 1;
+    height: 320px;
+    background-color: silver;/*margin-top: -20px;*/
+}
+.xpe1 img:hover {
+    transform: scale(1.2);
+}
+.xpe1text {
+    float: left;
+    margin: 20px 0px 0px 50px;
+}
+.foot {
+    background-image: url("images/foot.jpg");
+    height: 250px;
+}
+.flex-container >div> a {
+    text-decoration: none;
+    color: white;
+}
+.flex-container >div> a:hover {
+    transition-duration: 0.3s;
+    font-weight: bold;
+    color: red;
+}
+.flex-container {
+    margin: 0px 14.5px;
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;/*	background-color: red;*/
+}
+.flex-container > div {
+    height: 170px;
+    width: 220px;
+    margin: 10px;
+    /*text-align: center;*/
+    line-height: 25px;
+    font-size: 15px;
+}
+.footbot {
+    height: 42px;
+    color: white;
+    text-align: center;/*background-color: #162135;*/
+}
+.icon img:hover {
+    transform: scale(1.2);
+}
+/* back to top */
+#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 1%;
+    z-index: 100;
+}
+#back-top img:hover {
+    moz-box-shadow: -2px 2px 25px #53298E;
+    webkit-box-shadow: -2px 2px 25px #53298E;
+    box-shadow: -2px 2px 25px #53298E;
+}
+/* anh đt mới */
+
+.divphone {
+    height: 500px;
+    width: 1199px;
+    background-image: url("images/backgrou2.png");/*linear-gradient(white, gray);*/
+}
+#anhphone {
+    height: 400px;
+}
+#anh_trai {
+    height: 350px;
+    position: absolute;
+    left: 330px;
+    margin-top: 10px;
+}
+#anh_giua {
+    height: 370px;
+    position: absolute;
+    left: 590px;/*margin-top: 40px;*/
+}
+#anh_phai {
+    height: 350px;
+    position: absolute;
+    left: 890px;
+    margin-top: 10px;
+}
+#buttonPhone {
+    height: 100px;
+}
+#xnote {
+    height: 80px;
+    position: absolute;
+    left: 332px;
+    margin-top: -20px;
+    z-index: 1;
+}
+#videoNote {
+    position: absolute;
+    top: 1650px;
+    left: 260px;
+    display: none;
+    z-index: 3;
+}
+#xz3 {
+    position: absolute;
+    left: 592px;
+    height: 80px;
+    margin-top: -20px;
+    z-index: 1;
+}
+#videoXZ3 {
+    position: absolute;
+    top: 1650px;
+    left: 260px;
+    display: none;
+    z-index: 3;
+}
+#flex {
+    position: absolute;
+    left: 910px;
+    height: 80px;
+    margin-top: -20px;
+    z-index: 1;
+}
+#videoFlex {
+    position: absolute;
+    top: 1650px;
+    left: 260px;
+    display: none;
+    z-index: 3;
+}
+/* button phone moi */
+#buttonNote {
+    background-color: lightgray;
+    padding-left: 9px;
+    width: 75px;
+    height: 22px;
+    color: black;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 13px;
+}
+#buttonNote:hover {
+    color: white;
+    background: #AB18AA;
+}
+#buttoFlex {
+    background-color: lightgray;
+    padding-left: 9px;
+    width: 75px;
+    height: 22px;
+    color: black;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 0px;
+}
+#buttoFlex:hover {
+    color: white;
+    background: #AB18AA;
+}
+#buttonXZ {
+    moz-box-shadow: 3px 4px 8px #000000;
+    webkit-box-shadow: 3px 4px 8px #000000;
+    box-shadow: 3px 4px 8px #000000;
+    background-color: lightgray;
+    padding-left: 9px;
+    width: 75px;
+    height: 22px;
+    color: black;
+}
+#buttonXZ:hover {
+    color: white;
+    background: #AB18AA;
+}

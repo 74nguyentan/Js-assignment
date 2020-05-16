@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sony Xperia</title>
+<link href="style.css" rel="stylesheet">
+<link href="loading.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	
+</head>
+
+<body>
+<div id="boxtrang">
+  <header>
+    <nav id="topmenu">
+      <ul class="menu">
+        <li><a href="sony.html"><img src="images/sony.JPG"/></a></li>
+        <li class="sony"><a href="#slide1">Điện thoại</a>
+          <ul id="menuDT">
+            <li><a href="#">Xperia XA</a></li>
+            <li><a href="#">Xperia XZ</a></li>
+            <li><a href="#slide2">Xperia Edge</a></li>
+            <li><a href="#xper">Xperia Note</a></li>
+          </ul>
+        </li>
+        <li class="sony"><a href="#">Sản phẩm thông minh</a>
+          <ul id="menuSP">
+            <li><a href="#">Đồng hồ thông minh</a></li>
+            <li><a href="#">Xperia Touch</a></li>
+            <li><a href="#">Xperia Ear Duo</a></li>
+            <li><a href="#">SmartBand</a></li>
+          </ul>
+        </li>
+        <li class="sony"><a href="#">Phụ kiện</a>
+          <ul id="menuPK">
+            <li><a href="#">Stereo Headset STH40D</a></li>
+            <li><a href="#">Headset SBH90C</a></li>
+            <li><a href="#">Ốp lưng</a></li>
+            <li><a href="#">Đế sạc không dây</a></li>
+          </ul>
+        </li>
+        <li class="sony"><a href="#">Hỗ trợ</a>
+          <ul id="menuHT">
+            <li><a href="#">Hỗ trợ kĩ thuật</a></li>
+            <li><a href="#">Tư vấn sản phẩm mới</a></li>
+            <li><a href="#">Hỗ trợ trải nghiệm SP</a></li>
+            <li><a href="#">Hỗ trợ thêm...</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+	  
+	  <!--tiêu đề-->
+    <div id="bia"></div>
+    <div id="tieude">
+      <h1>Sony Xperia</h1>
+      <h3 style="padding-left: 100px;">Đỉnh cao Smartphone</h3>
+    </div>
+    <div id="dki"> <a href="dangkitrainghiem.html" style="color: white;text-decoration: none;transition-duration: 0.3s;">Đăng kí trải nghiệm ngay --> </a></div>
+  </header>
+  <div id="body_ar_as">
+    <article> <br />
+      <div>
+        <p><img src="images/xperia-logo.png" style="width: 400px; float: left;">
+        <h1 style="padding-top: 57px ;font-size: 35px;color: red;"> Đỉnh cao smartphone tại MWC 2019</h1>
+        </p>
+      </div>
+      <!--slilde show 1-->
+      <div id="slide1">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/xperia_note.jpg" style="width:100%;transition-duration: 0.5s;">
+            <div class="text"></div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/xz3p2.jpg" style="width:100%;transition-duration: 0.5s;">
+            <div class="text"></div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/zp.jpg" style="width:100%;transition-duration: 0.5s;">
+            <div class="text"></div>
+          </div>
+        </div>
+        <br>
+        <div style="text-align:center"> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> </div>
+      </div>
+      <br />
+      <div style="height: 60px;margin-top: 20px;">
+        <h2 style="margin-left: 80px;padding-left: 10px;font-size: 25px;">XPERIA EDGE GOLD EDITION <a style="padding: 0px 0px;font-size: 20px;color: red;" >Sang trọng & quý phái</a></h2> <!--class="ld ld-float"-->
+      </div>
+      <br />
+      <!--slilde show 2-->
+      <div id="slide2">
+        <div id="carousel">
+          <div class="hideLeft"> <img src="images/xperia_edge_gold_3.jpg" > </div>
+          <div class="prevLeftSecond"> <img src="images/xperia_edge_gold_1.jpg"> </div>
+          <div class="prev"> <img src="images/xperia_edge_gold_2.jpg"> </div>
+          <div class="selected"> <img src="images/xperia_edge_gold.jpg"> </div>
+          <div class="next"> <img src="images/xperia_edge_gold_1.jpg"> </div>
+          <div class="nextRightSecond"> <img src="images/xperia_edge_gold_2.jpg"> </div>
+          <div class="hideRight"> <img src="images/xperia_edge_gold_3.jpg"> </div>
+        </div>
+		  <!-- button next slide show-->
+        <div class="buttons">
+			<a id="prev" >&#10094;</a>
+            <a id="next" >&#10095;</a>
+  
+        </div>
+      </div>
+	  <!--div anh đt mới-->
+      <div class="divphone">
+		  
+        <div id="anhphone"> 
+			<img id="anh_trai" src="images/note.png"> 
+			<img id="anh_giua" src="images/xz3_inhfinityy.png"> 
+			<img id="anh_phai" src="images/flex.png"> 
+		  </div>
+		<!--  button review-->
+        <div id="buttonPhone">
+			
+          <div id="xnote">
+            <h4>Xperia Note</h4>
+			  <div onmouseover="playVid()" onmouseout="pauseVid()" id="buttonNote" style="margin-left: 20px;animation-duration:1.5s;" class="btn btn-primary ld ld-shadow-a ">Review</div>
+          </div>
+			
+			
+			<video id="videoNote" height="460px" >
+				<source src="video/note.mp4" type="video/mp4">
+				</video>
+			
+			
+          <div id="xz3">
+            <h4>Xperia XZ3 Infinity</h4>
+			  <div onmouseover="playVide()" onmouseout="pauseVide()" id="buttonXZ" style="margin-left: 50px;animation-duration:1.5s;" class="btn btn-primary ld ld-shadow-a ">Review</div>
+          </div>
+			
+			<video id="videoXZ3" height="460px" >
+				<source src="video/xz3.mp4" type="video/mp4">
+				</video>
+			
+          <div id="flex">
+            <h4>Xperia Flex</h4>
+			  <div onmouseover="playVidF()" onmouseout="pauseVidF()" id="buttoFlex" style="margin-left: 20px;animation-duration:1.5s;" class="btn btn-primary ld ld-shadow-a ">Review</div>
+          </div>
+			
+			<video id="videoFlex" height="460px" >
+				<source src="video/flex.mp4" type="video/mp4">
+				</video>
+        </div>
+      </div>
+      <br />
+	  
+   <div id="xper">
+	     <div class="xpe2"> <img style="float: left;width: 600px;height: 320px;transition-duration: 0.5s;" src="images/xp_edge.jpg">
+        <div class="xpe2text">
+          <h2>Xperia edge 2</h2>
+          <p style="color: white; font-size: 18px;">Ấn tượng đến từ màn hình 5K full đột phá</p>
+          <p style="color: black; font-size: 22px;">Thiết kế lay động mọi giác quan</p>
+        </div>
+      </div>
+      <div class="xpe1"> <img src="images/Sony-Xperia-2.jpg" style="width: 600px;float: right;height: 320px;transition-duration: 0.5s;">
+        <div class="xpe1text">
+          <h2>Xperia 2</h2>
+          <p style="color: white;font-size: 22px;margin: -10px 0px;">Camera</p>
+          <p style="color: black; font-size: 22px;">Thách thức mọi giới hạn</p>
+        </div>
+      </div>
+	  </div>
+      <br />
+    </article>
+  </div>
+  <br />
+	
+  <footer class="foot">
+    <div class="flex-container">
+      <div>
+        <h3>Sản phẩm</h3>
+        <a href="#">Điện thoại thông minh</a> <br />
+        <a href="#">Thiết bị thông minh</a> <br />
+        <a href="#">Phụ kiện</a> </div>
+      <div>
+        <h3>Xperia mới</h3>
+        <a href="#">Xperia note</a> <br />
+        <a href="#">Xperia XZ3</a> <br />
+        <a href="#">Xperia edge</a> <br />
+        <a href="#">Xperia edge gold</a> </div>
+      <div>
+        <h3> Sony hỗ trợ</h3>
+        <a href="#">Tư vấn sản phẩm</a> <br />
+        <a href="#">Hỗ trợ kĩ thuật</a> <br />
+        <a href="#">Xperia và Androi</a> </div>
+      <div>
+        <h3>Sony mobile</h3>
+        <a href="#">Đăng kí nhận thông tin</a><br />
+        <a href="#">Đăng kí trải nghiệm</a> <br />
+      </div>
+      <div class="icon">
+        <h3>Liên kết</h3>
+        <a href="#"><img src="images/icons8-youtube-squared-48.png" style="transition-duration: 0.5s; "></a> <a href="#"><img src="images/icons8-gmail-48.png" style="transition-duration: 0.5s;"></a> <br />
+        <a href="#"><img src="images/icons8-ringing-phone-50.png" style="transition-duration: 0.5s;"></a> <a href="#"><img src="images/icons8-bbm-messenger-48.png" style="transition-duration: 0.5s;"></a> </div>
+      <div>
+        <h3 style="margin-bottom: 0px;" >Fanpage chúng tôi</h3>
+        <div class="fb-page" data-href="https://www.facebook.com/official.sonyvietnam/" data-tabs="timeline" data-width="" data-height="70px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/official.sonyvietnam/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/official.sonyvietnam/">Sony Vietnam</a></blockquote>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="footbot">Copyright © 2011-2019 Sony Mobile Communications Inc. All rights reserved</div>
+  </footer>
+  <div id="back-top"> <a href="#"> <img src="images/icons8-up-squared-30.png" ></a> </div>
+ 
+	
+	<!--button phone-->
+<!-- <script> 
+var vid = document.getElementById("videoNote"); 
+
+function playVid() { 
+	vid.style.display = 'block'
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+	vid.style.display = 'none';
+} 
+</script>
+	
+	
+<script> 
+var vide = document.getElementById("videoXZ3"); 
+
+function playVide() { 
+	vide.style.display = 'block'
+  vide.play(); 
+} 
+
+function pauseVide() { 
+  vide.pause(); 
+	vide.style.display = 'none';
+} 
+</script>
+	
+	
+ <script> 
+var vidF = document.getElementById("videoFlex"); 
+
+function playVidF() { 
+	vidF.style.display = 'block'
+  vidF.play(); 
+} 
+
+function pauseVidF() { 
+  vidF.pause(); 
+	vidF.style.display = 'none';
+} 
+</script>-->
+<script>
+	// button review
+
+	//note
+	document.getElementById("buttonNote").onmouseover = function(){
+		document.getElementById("videoNote").style.display = 'block'
+		document.getElementById("videoNote").play();
+	};
+	document.getElementById("buttonNote").onmouseout =function(){
+		document.getElementById("videoNote").style.display='none'
+		document.getElementById("videoNote").pause();
+	};
+	// xz3
+	document.getElementById("buttonXZ").onmouseover = function(){
+		document.getElementById("videoXZ3").style.display = 'block';
+		document.getElementById("videoXZ3").play();
+	};
+	document.getElementById("buttonXZ").onmouseout = function(){
+		document.getElementById("videoXZ3").style.display = 'none';
+		document.getElementById("videoXZ3").pause();
+	};
+	// flex
+	document.getElementById("buttoFlex").onmouseover = function(){
+		document.getElementById("videoFlex").style.display = 'block';
+		document.getElementById("videoFlex").play();
+	};
+	document.getElementById("buttoFlex").onmouseout = function(){
+		document.getElementById("videoFlex").style.display ='none';
+		document.getElementById("videoFlex").pause();
+	};
+	/*back top*/
+ 
+$(document).ready(function(){
+
+  // hide #back-top first
+  $("#back-top").hide();
+
+  // fade in #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#back-top').fadeIn();
+      } else {
+        $('#back-top').fadeOut();
+      }
+    });
+
+    // scroll body to 0px on click
+    $('#back-top .fi-arrow-up').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+
+});
+
+	</script> 
+  <script type="text/javascript">
+	  
+	    
+	  /* js slide 1 */
+	  
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+
+	  
+ </script> 
+  
+  <!--slide show 2--> 
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> 
+  <script src="js/index.js"></script> 
+  
+  <!--puglic fancebook-->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=367265337263119&autoLogAppEvents=1"></script> 
+</div>
+</body>
+</html>
